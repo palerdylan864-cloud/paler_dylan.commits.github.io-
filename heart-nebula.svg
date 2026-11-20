@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 320">
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#150d3b"/>
+      <stop offset="1" stop-color="#53124e"/>
+    </linearGradient>
+    <radialGradient id="nebula">
+      <stop stop-color="#ff74c8" stop-opacity=".85"/>
+      <stop offset=".48" stop-color="#b52ae0" stop-opacity=".42"/>
+      <stop offset="1" stop-color="#5717a3" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="heart" x2="1" y2="1">
+      <stop stop-color="#fff1fa"/>
+      <stop offset=".48" stop-color="#ff68ba"/>
+      <stop offset="1" stop-color="#9b35ed"/>
+    </linearGradient>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+  </defs>
+  <rect width="240" height="320" rx="22" fill="url(#sky)"/>
+  <ellipse cx="123" cy="158" rx="108" ry="116" fill="url(#nebula)"/>
+  <g fill="none" stroke="#f8a5ff" stroke-opacity=".5">
+    <path d="M22 179c34-84 154-127 198-67s-42 121-120 139S16 222 53 153s112-80 155-43"/>
+    <path d="M27 196c49 47 128 39 171-15" stroke="#ff9bd5" stroke-opacity=".4"/>
+  </g>
+  <path d="M120 226 55 163C9 117 74 68 120 117c46-49 111 0 65 46z" fill="#ff5db5" opacity=".55" filter="url(#glow)"/>
+  <path d="M120 220 61 162C22 123 75 82 120 125c45-43 98-2 59 37z" fill="url(#heart)" stroke="#ffe6f6" stroke-width="2"/>
+  <g fill="#fff">
+    <circle cx="42" cy="59" r="2"/><circle cx="191" cy="48" r="2"/>
+    <circle cx="204" cy="223" r="1.7"/><circle cx="34" cy="249" r="1.5"/>
+    <circle cx="83" cy="42" r="1.2"/><circle cx="161" cy="274" r="1.5"/>
+    <circle cx="73" cy="282" r="1"/><circle cx="207" cy="111" r="1.2"/>
+  </g>
+  <path d="M48 91v10m-5-5h10M184 263v12m-6-6h12" stroke="#fff4ff" stroke-width="1.5" opacity=".9"/>
+</svg>
