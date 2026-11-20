@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Love Galaxy for Maria</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <canvas id="galaxy" aria-hidden="true"></canvas>
+    <p class="heart-name" id="heartName" aria-hidden="true">Maria</p>
+
+    <div class="orbiting-gallery" id="orbitingGallery" aria-hidden="true">
+        <figure class="orbit-photo">
+            <img src="images/maria-photo.jpg" alt="">
+        </figure>
+        <figure class="orbit-photo">
+            <img src="images/moonlit-promise-photo.jpg" alt="">
+        </figure>
+        <figure class="orbit-photo">
+            <img src="images/stardust-roses-photo.jpg" alt="">
+        </figure>
+    </div>
+
+    <main>
+      <section class="intro" aria-labelledby="pageTitle">
+        <div class="intro-copy">
+          <p class="small-title">A NOTE FOR MARIA</p>
+
+          <h1 id="pageTitle">For Maria, With All My Heart</h1>
+
+          <p class="subtitle">
+            You make every day brighter.
+          </p>
+
+          <p class="journey-status" id="journeyStatus" aria-live="polite"></p>
+
+          <button id="surpriseBtn" type="button" aria-expanded="false" aria-controls="loveSurprise">
+            Open Your Surprise 💗
+          </button>
+        </div>
+
+        <aside class="music-player" aria-label="Music player">
+            <button class="music-play-button" id="musicPlayButton" type="button" aria-label="Listen to the music, my love.">
+                Listen to the music, my love.
+                <span class="music-sparkle" aria-hidden="true">✨</span>
+            </button>
+            <iframe
+                src="https://www.youtube-nocookie.com/embed/uU8PfAtTdpM?playsinline=1&amp;controls=1&amp;cc_load_policy=0&amp;rel=0&amp;autoplay=0&amp;mute=0&amp;enablejsapi=1"
+                title="Statue on YouTube"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+            </iframe>
+        </aside>
+      </section>
+
+      <section class="love-container" id="loveSurprise" aria-hidden="true" aria-labelledby="loveTitle">
+        <h2 id="loveTitle">You Are My Forever</h2>
+
+        <p id="loveMessage" aria-live="polite">
+            I feel lucky to love you.
+        </p>
+
+        <div class="signature">
+            Always yours, with all my heart.
+        </div>
+      </section>
+    </main>
+
+    <footer class="bottom-text">
+        Made with love for Maria ✨
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
